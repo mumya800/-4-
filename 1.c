@@ -1,14 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
-    char fruits[6][20] = {"яблоко", "банан", "апельсин", "груша", "персик", "абрикос"};
-    int size = sizeof(fruits) / sizeof(fruits[0]);
-    
-    printf("Размер массива фруктов: %d\n", size);
-    printf("Фрукты в массиве:\n");
-    
-    for (int i = 0; i < size; i++)
-    {
-        printf("%s\n", fruits[i]);
-    }
+int main() 
+{
+	int red_balls[10];
+	int size = sizeof(red_balls) / sizeof(red_balls[0]);
+	
+	printf("В коробке red_balls помещается %d шариков.\n", size);
+	return 0;
 }
